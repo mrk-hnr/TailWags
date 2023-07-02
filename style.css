@@ -48,7 +48,7 @@ header {
 .breed-logo {
     width: 100%;
     max-width: 9rem;
-    min-width: 5rem;
+    min-width: 7rem;
 
     padding: 1rem;
 
@@ -73,54 +73,8 @@ p {
 }
 
 /* ABOUT CODE END */
-/* VIDEO CODE START */
-
-/* .video-containerParent {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.video-container {
-    text-align: center;
-}
-
-.video-container h3 {
-    padding: 1rem 0;
-    text-align: center
-} */
-
-.giveMeSpace {
-    padding: 1rem 0 2rem 0;
-}
-
-.videos, .videos h3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-}
-.videos video {
-    width: 50%;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    align-items: center;
-    text-align: center;
-}
 
 
-
-
-/* 
-video-container h4 {
-    display: block;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-} */
-/* VIDEO CODE END */
-/* FEATURE CODE START */
 
 a {
     text-decoration: none;
@@ -296,9 +250,11 @@ a:hover {
     background: white;
     padding-top: 1rem;
     width: 75%;
+    min-width: 20rem;
     margin: 0 auto;
     text-align: center;
     border-radius: 1rem;
+
 }
 
 .name-form input,
@@ -307,10 +263,12 @@ a:hover {
 }
 
 textarea {
+    margin-top: 2rem;
     padding: 5rem;
     border-radius: 5px;
     padding-top: 1rem;
-    width: 500px;
+    width: 80%;
+    min-width: 250px;
 }
 
 .text-area {
@@ -330,7 +288,7 @@ textarea {
 #name,
 #email {
     padding-left: .5rem;
-    padding-right: 10rem;
+    padding-right: 9rem;
     border-radius: 5px;
 }
 
@@ -374,9 +332,13 @@ footer img {
 }
 
 
-@media (min-width: 520px) and (max-width: 932px) {
+@media (min-width: 500px) and (max-width: 932px) {
+    html {
+        min-width: 500px;
+    }
+
     textarea {
-        width: 250px;
+        min-width: 250px;
         padding: 0;
     }
     .videos {
